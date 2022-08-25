@@ -1,0 +1,164 @@
+.header {
+	display: flex;
+	padding: 6px 10px;
+	/* background-image: url('./Rectangle 2.png'); */
+	background-repeat:no-repeat;
+	background-color: black;
+
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+	font-size: 26px;
+	line-height: 52px;
+}
+
+.header nav {
+	border: 1px solid firebrick;
+	width: 70%;
+	text-align: right;
+}
+
+.header nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 26px;
+	display: inline-block;
+	padding: 0 20px;	
+}
+
+.header nav a:hover {
+	background-color: #fa0;
+}
+
+/* 麵包削 */
+.path {
+	display: flex;
+	padding:5px 20px;
+
+}
+
+.path li {
+	padding: 6px 10px;
+	position: relative;
+	color: grey;
+	font-size: 24px;
+}
+
+.path li + li::before {
+	content: ">";
+	color:grey;
+	position: absolute;
+	left: -5px;
+}
+
+/* 下方區塊 */
+.main_title {
+	font-size: 48px;
+	color: #FF650F;
+	padding:5px 30px;
+
+}
+
+.banner img{
+	width: 100%;
+}
+
+.describe {
+	display: flex;
+	width: 960px;
+	flex-direction: column;
+	margin: auto;
+}
+
+.describe h3 {
+	font-size: 24px;
+	margin-top: 50px;
+	/* padding:5px 30px;
+	margin: 5px 0px; */
+}
+
+.describe p {
+	margin-top: 16px;
+}
+
+/* recommend區塊 */
+
+
+.sub_title {
+	width: 100%;
+	display: flex;
+	/* margin: auto;沒用 */
+	/* 水平置中 */
+	justify-content: center;    
+	/* 垂直置中 */
+	align-items: center;    
+	font-size: 30px;
+	margin:40px 0 5px;
+	color: black;
+	/* position: relative; */
+	font-weight: 800;
+	border: 1px solid saddlebrown;
+
+}
+
+.more {
+	border: 1px solid saddlebrown;
+	/* position: absolute;
+	right: 28%;
+	bottom:0px; */
+	border-radius: 15px;
+	background-color: #FD975E;
+	color: #fff;
+	font-size: 26px;
+}
+
+h3 {
+
+
+	border: 1px solid saddlebrown;
+	font-size: 36px;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.wrap {
+	width: 1280px;
+	margin: auto;
+}
+	
+.recommend .wrap {
+	display: flex;
+	
+}
+
+.recommend .wrap .item{
+		width: 300px;
+		margin: 0 10px;
+		text-align: center;
+
+}
+
+.item img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.content {
+	/* position: absolute;
+	transform:  translate(-50%,-50%); */
+	
+}
+
+
+.footer {
+	text-align: center;
+	background-color: #000;
+	color: white;
+	padding: 0 20px;
+	line-height: 64px;
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 20px;
+}
