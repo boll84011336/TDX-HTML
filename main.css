@@ -81,26 +81,29 @@
 
 .describe p {
 	margin-top: 16px;
+	margin-bottom: 40px;
 }
 
 /* recommend區塊 */
 
 
 .sub_title {
-	width: 100%;
+	width: 960px;
 	display: flex;
+	margin:auto;
 	/* margin: auto;沒用 */
-	/* 水平置中 */
+ 	/* 水平置中 */
 	justify-content: center;    
 	/* 垂直置中 */
-	align-items: center;    
+	align-items: center;  
+
 	font-size: 30px;
-	margin:40px 0 5px;
 	color: black;
-	/* position: relative; */
+	position: relative;
 	font-weight: 800;
 	border: 1px solid saddlebrown;
-
+	margin-bottom: 40px;
+	
 }
 
 .more {
@@ -112,11 +115,10 @@
 	background-color: #FD975E;
 	color: #fff;
 	font-size: 26px;
+
 }
 
 h3 {
-
-
 	border: 1px solid saddlebrown;
 	font-size: 36px;
 	/* align-items: center;
