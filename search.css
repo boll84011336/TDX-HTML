@@ -1,0 +1,127 @@
+/* header start */
+.header {
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+}
+
+.bgimg {
+  position: absolute;
+}
+
+.header nav {
+  position: absolute;
+  top:0;
+  display: flex;
+  width: 100%;
+	padding: 0 20px;
+  margin-top: 20px;
+}
+
+nav .title {
+  font-size: 48px;
+  padding-left: 25px;
+}
+
+
+nav .list {
+  position: absolute;
+  right: 75px;
+}
+
+nav .list a {
+	font-size: 26px;
+	line-height: 52px;
+  display: inline-block;
+	padding: 0 20px;	
+}
+
+.navbar a {
+  text-decoration: none;
+	color: white;
+}
+
+
+
+
+.header .list a:hover {
+	background-color: #fa0;
+}
+
+/* header結束 */
+
+.sub_title > h3 {
+  font-size: 48px;
+}
+
+.sub_title {
+  width: 960px;
+  display: flex;
+  margin: auto;
+  font-size: 30px;
+	color: black;
+	font-weight: 800;
+  /* 水平置中 */
+  justify-content: center; 
+  /* 垂直置中 */
+  align-items: center;
+  /* border: 1px solid saddlebrown; */
+	margin-bottom: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.button__list {
+  position: absolute;
+  right: 0;
+}
+
+.button__list button {
+  border: 1px solid saddlebrown;
+  border-radius: 15px;
+	background-color:#fff;
+	color:#FD975E;
+	font-size: 26px;
+  margin-right: 12px;
+  width: 80px;
+}
+
+.button__list button:hover {
+	background-color:#FD975E;
+  color:#fff;
+}
+
+
+	
+.container .wrap {
+	display: flex;
+  width: 960px;
+	margin: auto;
+  margin-bottom: 40px;
+}
+
+.container .wrap .item{
+  width: 300px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  border: 1px solid saddlebrown;
+	border-radius: 15px;
+}
+
+.wrap .item img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.footer {
+	text-align: center;
+	background: #FD975E;
+	color: white;
+	padding: 0 20px;
+	line-height: 64px;
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 20px;
+}
