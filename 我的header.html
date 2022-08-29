@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
 		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
 
@@ -27,13 +29,13 @@
 				position: absolute;	
 			}
 
-			.navbar {
+			.header nav {
 				position: absolute;
 				top:0;
 				display: flex;
-				justify-content: space-between;
+				width: 100%;
 				padding: 0 20px;
-  			margin-top: 20px;
+				margin-top: 20px;
 			}
 
 			.navbar .title {
@@ -41,9 +43,9 @@
 			}
 
 			.navbar .list {
-				position: fixed;
-				right: 50px;
-				border: 1px solid firebrick;
+				position: absolute;
+  			right: 75px;
+			
 			}
 
 			.header a {
@@ -85,9 +87,10 @@
 
 			.main-content {
 				background-color: #fff;
+				position: relative;
 			}
 
-			.more {
+			/* .more {
 				position: absolute;
 				right:250px;
 				top:20px;
@@ -98,21 +101,53 @@
 				font-size: 18px;		
 				padding: 5px;
 				width: 90px;	
+			} */
+			.more {
+				font-size: 18px;
+				background-color: #FD975E;
+				border-radius: 18px;
+				position: absolute;
+				right: 2%;
+				top:12px;	
 			}
 
-			/* block */
-			.sub_title {				
+			.sub_title h3 {	
 				text-align: center;
-				padding: 5px;
-				margin-bottom: 5px;
+			}
+
+			.btn {
+				display: inline-block;
+				font-weight: 600;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				user-select: none;
+				border: 1px solid transparent;
+				padding: 0.375rem 0.75rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				border-radius: 1.25rem
+			}
+			
+			.sub_title :first-child {
+				margin-top: 20px;
+			}
+			/* block */
+			.sub_title {
+				display: flex;
+				margin: auto;
+				width: 960px;
 				color: black;
 				font-weight: 700;
 				font-size: 40px;
 				position: relative;
-				padding-top: 20px;
+        padding:10px 0 10px 0;
+				justify-content: center;
+				align-items: center;
 			}
 
-			
+
+
 
 			.block1 {
 				display: flex;
@@ -123,16 +158,69 @@
 			.card1 {
 				width: 300px;
 				margin: 10px;
-				border: 1px solid #aaa;
 				padding: 10px;
-				margin-bottom: 40px;
-				
+				margin-bottom: 40px;		
 			}
 
 			.card1 img {
 				width: 100%;
 				border-radius: 10px;
 			}
+
+			/* search */
+			.box {
+				position: absolute;
+				top: 30%;
+				left: 30%;
+				height: 100px;
+				transform: translateY(-30%, -45%);
+			}
+
+			.container {
+				position: relative;
+				height: 30px;
+				margin-top: 20px;
+				border-radius: 5px;
+				width: 100%;
+			}
+
+			.fa-search {
+				position: absolute;
+				top: 5px;
+				right: 5%;
+				z-index: 1;
+				color: #4f5b66;
+				font-size: 16px;
+				font-size: 1.5em
+			}
+
+			.container input {
+				width:600px;
+				height: 40px;
+				border-radius: 5px;
+			}
+
+			.selects {
+				position: absolute;
+				top:70%;
+				margin-left:2%;
+
+			}
+
+			.selects select option {
+				height: 5rem;
+
+			}
+
+			.selects select {
+				box-sizing: border-box;
+				width: 300px;
+				font-size: 1.3em;
+				border-radius: 5px;
+			}
+
+
+		
     </style>
 </head>
 <body>
@@ -152,11 +240,30 @@
 			</div>
 			<!-- header -->
 
+			<!-- 搜尋框 -->			
+			<div class="box">
+				<div class="container">
+						<input type="search" id="search" placeholder="Search..." />
+						<span class="icon"><i class="fa fa-search"></i></span>
+				</div>
+				<div class="selects">
+					<select>
+						<option>請選擇你最愛的寵物</option>
+						<option>Dog</option>
+						<option>Cat</option>
+					</select>
+					<select>
+						<option>請選擇你最愛的寵物</option>
+						<option>Dog</option>
+						<option>Cat</option>
+					</select>
+				</div>
+			</div>
 			<!-- main-content -->
 			<div class="main-content">
 				<div class="sub_title">
 					<h3>推薦美食</h3>
-					<button class="more">查看更多</button>
+					<div class="sub_title_btn"><button class="more btn">查看更多</button></div>
 				</div>
 				<div class="block1">
 					<div class="card1">

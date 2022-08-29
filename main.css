@@ -1,43 +1,58 @@
 .header {
-	display: flex;
-	padding: 6px 10px;
-	/* background-image: url('./Rectangle 2.png'); */
-	background-repeat:no-repeat;
-	background-color: black;
-
+  position: relative;
 }
 
-.header a {
-	text-decoration: none;
-	color: white;
-	font-size: 26px;
-	line-height: 52px;
+.header img {
+  width: 100%;
+}
+
+.bgimg {
+  position: absolute;
+}
+
+.bg {
+	margin: -38% 0 0 0;
 }
 
 .header nav {
-	border: 1px solid firebrick;
-	width: 70%;
-	text-align: right;
+  position: absolute;
+  top:0;
+  display: flex;
+  width: 100%;
+	padding: 0 20px;
+  margin-top: 20px;
 }
 
-.header nav a {
-	text-decoration: none;
-	color: white;
-	font-size: 26px;
-	display: inline-block;
+nav .title {
+  font-size: 36px;
+  padding-left: 25px;
+}
+
+
+nav .list {
+  position: absolute;
+  right: 75px;
+}
+
+nav .list a {
+	font-size: 24px;
+	line-height: 32px;
+  display: inline-block;
 	padding: 0 20px;	
 }
 
-.header nav a:hover {
-	background-color: #fa0;
+.navbar a {
+  text-decoration: none;
+	color: white;
 }
 
 /* 麵包削 */
 .path {
 	display: flex;
 	padding:5px 20px;
-
+	margin-left: 10%;
 }
+
 
 .path li {
 	padding: 6px 10px;
@@ -57,11 +72,12 @@
 .main_title {
 	font-size: 48px;
 	color: #FF650F;
-	padding:5px 30px;
-
+	padding:0px 30px;
+	margin-left: 10%;
 }
 
 .banner img{
+	margin-top: 30px;
 	width: 100%;
 }
 
@@ -88,7 +104,7 @@
 
 
 .sub_title {
-	width: 960px;
+	width: 1280px;
 	display: flex;
 	margin:auto;
 	/* margin: auto;沒用 */
@@ -96,7 +112,6 @@
 	justify-content: center;    
 	/* 垂直置中 */
 	align-items: center;  
-
 	font-size: 30px;
 	color: black;
 	position: relative;
@@ -108,14 +123,13 @@
 
 .more {
 	border: 1px solid saddlebrown;
-	/* position: absolute;
-	right: 28%;
-	bottom:0px; */
 	border-radius: 15px;
 	background-color: #FD975E;
 	color: #fff;
 	font-size: 26px;
-
+	position: absolute;
+	right: 10px;
+	top:2%;	
 }
 
 h3 {
